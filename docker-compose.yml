@@ -8,7 +8,7 @@ services:
         volumes:
             - .:/var/www/html
     nginx:
-        build: ./config/docker/nginx
+        build: config/docker/local/nginx
         depends_on:
             - php
         ports:
